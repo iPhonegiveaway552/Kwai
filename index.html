@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Membuka Kwai…</title>
+
+  <script>
+    // Buka APK KWAI (home / feed)
+    window.location.href =
+      "intent://#Intent;scheme=kwai;package=com.kwai.bulldog;end";
+
+    // Fallback Play Store jika APK belum ada
+    setTimeout(function () {
+      window.location.href =
+        "https://play.google.com/store/apps/details?id=com.kwai.bulldog";
+    }, 2000);
+  </script>
+</head>
+<body></body>
+</html>
